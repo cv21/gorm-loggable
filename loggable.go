@@ -18,7 +18,7 @@ type ChangeLog struct {
 	Object       JSONB  `sql:"type:JSONB"`
 }
 
-type LoggableInterface interface {
+type loggableInterface interface {
 	SetEnabled(v bool)
 	Enabled() bool
 }
